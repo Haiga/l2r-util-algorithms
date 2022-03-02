@@ -1,0 +1,458 @@
+2022-02-23 21:31:46,228 - allrank.utils.ltr_logging - INFO - created paths container PathsContainer(local_base_output_path='results-new/', base_output_path='results-new/', output_dir='results-new/results\\0/', tensorboard_output_path='results-new/tb_evals\\single\\0/', config_path='local.json')
+2022-02-23 21:31:46,229 - allrank.utils.ltr_logging - INFO - Config:
+ {'click_model': None,
+ 'data': DataConfig(path='D:\\Colecoes\\BD\\mq2007//Fold1/', num_workers=1, batch_size=64, slate_length=240, validation_ds_role='vali'),
+ 'detect_anomaly': False,
+ 'expected_metrics': {'val': {'ndcg_5': 0.5}},
+ 'loss': NameArgsConfig(name='lambdaLoss', args={'weighing_scheme': 'ndcgLoss2PP_scheme', 'k': None, 'mu': 10, 'sigma': 1.0}),
+ 'lr_scheduler': NameArgsConfig(name='StepLR', args={'step_size': 50, 'gamma': 0.1}),
+ 'metrics': defaultdict(<class 'list'>,
+                        {'ndcg': [5,
+                                  10]}),
+ 'model': ModelConfig(fc_model={'sizes': [128], 'input_norm': False, 'activation': None, 'dropout': 0.0}, transformer=TransformerConfig(N=2, d_ff=64, h=2, positional_encoding=None, dropout=0.3), post_model={'output_activation': None, 'd_output': 1}),
+ 'optimizer': NameArgsConfig(name='Adam', args={'lr': 0.001}),
+ 'training': TrainingConfig(epochs=10, gradient_clipping_norm=None, early_stopping_patience=100),
+ 'val_metric': 'ndcg_5'}
+2022-02-23 21:31:46,230 - allrank.utils.ltr_logging - INFO - will execute cp local.json results-new/results\0/used_config.json
+2022-02-23 21:31:46,267 - allrank.utils.ltr_logging - INFO - exit_code = 1
+2022-02-23 21:32:28,590 - allrank.utils.ltr_logging - INFO - created paths container PathsContainer(local_base_output_path='results-new/', base_output_path='results-new/', output_dir='results-new/results\\0/', tensorboard_output_path='results-new/tb_evals\\single\\0/', config_path='local.json')
+2022-02-23 21:32:28,590 - allrank.utils.ltr_logging - INFO - Config:
+ {'click_model': None,
+ 'data': DataConfig(path='D:\\Colecoes\\BD\\mq2007//Fold1/', num_workers=1, batch_size=64, slate_length=240, validation_ds_role='vali'),
+ 'detect_anomaly': False,
+ 'expected_metrics': {'val': {'ndcg_5': 0.5}},
+ 'loss': NameArgsConfig(name='lambdaLoss', args={'weighing_scheme': 'ndcgLoss2PP_scheme', 'k': None, 'mu': 10, 'sigma': 1.0}),
+ 'lr_scheduler': NameArgsConfig(name='StepLR', args={'step_size': 50, 'gamma': 0.1}),
+ 'metrics': defaultdict(<class 'list'>,
+                        {'ndcg': [5,
+                                  10]}),
+ 'model': ModelConfig(fc_model={'sizes': [128], 'input_norm': False, 'activation': None, 'dropout': 0.0}, transformer=TransformerConfig(N=2, d_ff=64, h=2, positional_encoding=None, dropout=0.3), post_model={'output_activation': None, 'd_output': 1}),
+ 'optimizer': NameArgsConfig(name='Adam', args={'lr': 0.001}),
+ 'training': TrainingConfig(epochs=10, gradient_clipping_norm=None, early_stopping_patience=100),
+ 'val_metric': 'ndcg_5'}
+2022-02-23 21:32:28,591 - allrank.utils.ltr_logging - INFO - will execute cp local.json results-new/results\0/used_config.json
+2022-02-23 21:32:28,600 - allrank.utils.ltr_logging - INFO - exit_code = 1
+2022-02-23 21:32:42,037 - allrank.utils.ltr_logging - INFO - created paths container PathsContainer(local_base_output_path='results-new/', base_output_path='results-new/', output_dir='results-new/results\\0/', tensorboard_output_path='results-new/tb_evals\\single\\0/', config_path='local.json')
+2022-02-23 21:32:42,038 - allrank.utils.ltr_logging - INFO - Config:
+ {'click_model': None,
+ 'data': DataConfig(path='D:\\Colecoes\\BD\\mq2007//Fold1/', num_workers=1, batch_size=64, slate_length=240, validation_ds_role='vali'),
+ 'detect_anomaly': False,
+ 'expected_metrics': {'val': {'ndcg_5': 0.5}},
+ 'loss': NameArgsConfig(name='lambdaLoss', args={'weighing_scheme': 'ndcgLoss2PP_scheme', 'k': None, 'mu': 10, 'sigma': 1.0}),
+ 'lr_scheduler': NameArgsConfig(name='StepLR', args={'step_size': 50, 'gamma': 0.1}),
+ 'metrics': defaultdict(<class 'list'>,
+                        {'ndcg': [5,
+                                  10]}),
+ 'model': ModelConfig(fc_model={'sizes': [128], 'input_norm': False, 'activation': None, 'dropout': 0.0}, transformer=TransformerConfig(N=2, d_ff=64, h=2, positional_encoding=None, dropout=0.3), post_model={'output_activation': None, 'd_output': 1}),
+ 'optimizer': NameArgsConfig(name='Adam', args={'lr': 0.001}),
+ 'training': TrainingConfig(epochs=10, gradient_clipping_norm=None, early_stopping_patience=100),
+ 'val_metric': 'ndcg_5'}
+2022-02-23 21:32:42,038 - allrank.utils.ltr_logging - INFO - will execute copy "local.json" "results-new/results\0/used_config.json"
+2022-02-23 21:32:42,053 - allrank.utils.ltr_logging - INFO - exit_code = 0
+2022-02-23 21:32:42,054 - allrank.utils.ltr_logging - INFO - will load train data from D:\Colecoes\BD\mq2007//Fold1/train.txt
+2022-02-23 21:32:43,346 - allrank.utils.ltr_logging - INFO - loaded dataset from <_io.BufferedReader name='D:\\Colecoes\\BD\\mq2007//Fold1/train.txt'> and got x shape (42158, 46), y shape (42158,) and query_ids shape (42158,)
+2022-02-23 21:32:43,357 - allrank.utils.ltr_logging - INFO - loaded dataset with 1017 queries
+2022-02-23 21:32:43,357 - allrank.utils.ltr_logging - INFO - longest query had 147 documents
+2022-02-23 21:32:43,359 - allrank.utils.ltr_logging - INFO - train DS shape: [1017, 147, 46]
+2022-02-23 21:32:43,359 - allrank.utils.ltr_logging - INFO - will load vali data from D:\Colecoes\BD\mq2007//Fold1/vali.txt
+2022-02-23 21:32:43,769 - allrank.utils.ltr_logging - INFO - loaded dataset from <_io.BufferedReader name='D:\\Colecoes\\BD\\mq2007//Fold1/vali.txt'> and got x shape (13813, 46), y shape (13813,) and query_ids shape (13813,)
+2022-02-23 21:32:43,773 - allrank.utils.ltr_logging - INFO - loaded dataset with 339 queries
+2022-02-23 21:32:43,773 - allrank.utils.ltr_logging - INFO - longest query had 88 documents
+2022-02-23 21:32:43,774 - allrank.utils.ltr_logging - INFO - vali DS shape: [339, 88, 46]
+2022-02-23 21:32:43,774 - allrank.utils.ltr_logging - INFO - Will pad to the longest slate: 88
+2022-02-23 21:32:43,774 - allrank.utils.ltr_logging - INFO - will load test data from D:\Colecoes\BD\mq2007//Fold1/test.txt
+2022-02-23 21:32:44,176 - allrank.utils.ltr_logging - INFO - loaded dataset from <_io.BufferedReader name='D:\\Colecoes\\BD\\mq2007//Fold1/test.txt'> and got x shape (13652, 46), y shape (13652,) and query_ids shape (13652,)
+2022-02-23 21:32:44,179 - allrank.utils.ltr_logging - INFO - loaded dataset with 336 queries
+2022-02-23 21:32:44,179 - allrank.utils.ltr_logging - INFO - longest query had 80 documents
+2022-02-23 21:32:44,180 - allrank.utils.ltr_logging - INFO - test DS shape: [336, 80, 46]
+2022-02-23 21:32:44,180 - allrank.utils.ltr_logging - INFO - Will pad to the longest slate: 80
+2022-02-23 21:32:44,181 - allrank.utils.ltr_logging - INFO - Model training will execute on cpu
+2022-02-23 21:32:44,190 - allrank.utils.ltr_logging - INFO - Model has 172673 trainable parameters
+2022-02-23 21:32:44,190 - allrank.utils.ltr_logging - INFO - Current learning rate: 0.001
+2022-02-23 21:33:30,035 - allrank.utils.ltr_logging - INFO - Epoch : 0 Train loss: 1516.0079450129056 Val loss: 2419.572944393552 Train ndcg_5 0.46648287773132324 Train ndcg_10 0.5063309073448181 Val ndcg_5 0.5037651062011719 Val ndcg_10 0.5446551442146301
+2022-02-23 21:33:30,035 - allrank.utils.ltr_logging - INFO - Current:0.5037651062011719 Best:0.0
+2022-02-23 21:33:30,036 - allrank.utils.ltr_logging - INFO - Current learning rate: 0.001
+2022-02-23 21:34:29,170 - allrank.utils.ltr_logging - INFO - created paths container PathsContainer(local_base_output_path='results-new/', base_output_path='results-new/', output_dir='results-new/results\\0/', tensorboard_output_path='results-new/tb_evals\\single\\0/', config_path='local.json')
+2022-02-23 21:34:29,186 - allrank.utils.ltr_logging - INFO - Config:
+ {'click_model': None,
+ 'data': DataConfig(path='D:\\Colecoes\\BD\\mq2007//Fold1/', num_workers=1, batch_size=64, slate_length=240, validation_ds_role='vali'),
+ 'detect_anomaly': False,
+ 'expected_metrics': {'val': {'ndcg_5': 0.5}},
+ 'loss': NameArgsConfig(name='lambdaLoss', args={'weighing_scheme': 'ndcgLoss2PP_scheme', 'k': None, 'mu': 10, 'sigma': 1.0}),
+ 'lr_scheduler': NameArgsConfig(name='StepLR', args={'step_size': 50, 'gamma': 0.1}),
+ 'metrics': defaultdict(<class 'list'>,
+                        {'ndcg': [5,
+                                  10]}),
+ 'model': ModelConfig(fc_model={'sizes': [32], 'input_norm': False, 'activation': None, 'dropout': 0.0}, transformer=TransformerConfig(N=2, d_ff=32, h=2, positional_encoding=None, dropout=0.3), post_model={'output_activation': None, 'd_output': 1}),
+ 'optimizer': NameArgsConfig(name='Adam', args={'lr': 0.001}),
+ 'training': TrainingConfig(epochs=2, gradient_clipping_norm=None, early_stopping_patience=100),
+ 'val_metric': 'ndcg_5'}
+2022-02-23 21:34:29,266 - allrank.utils.ltr_logging - INFO - will execute copy "local.json" "results-new/results\0/used_config.json"
+2022-02-23 21:34:29,540 - allrank.utils.ltr_logging - INFO - exit_code = 0
+2022-02-23 21:34:29,540 - allrank.utils.ltr_logging - INFO - will load train data from D:\Colecoes\BD\mq2007//Fold1/train.txt
+2022-02-23 21:34:31,221 - allrank.utils.ltr_logging - INFO - loaded dataset from <_io.BufferedReader name='D:\\Colecoes\\BD\\mq2007//Fold1/train.txt'> and got x shape (42158, 46), y shape (42158,) and query_ids shape (42158,)
+2022-02-23 21:34:31,230 - allrank.utils.ltr_logging - INFO - loaded dataset with 1017 queries
+2022-02-23 21:34:31,230 - allrank.utils.ltr_logging - INFO - longest query had 147 documents
+2022-02-23 21:34:31,232 - allrank.utils.ltr_logging - INFO - train DS shape: [1017, 147, 46]
+2022-02-23 21:34:31,232 - allrank.utils.ltr_logging - INFO - will load vali data from D:\Colecoes\BD\mq2007//Fold1/vali.txt
+2022-02-23 21:34:31,636 - allrank.utils.ltr_logging - INFO - loaded dataset from <_io.BufferedReader name='D:\\Colecoes\\BD\\mq2007//Fold1/vali.txt'> and got x shape (13813, 46), y shape (13813,) and query_ids shape (13813,)
+2022-02-23 21:34:31,639 - allrank.utils.ltr_logging - INFO - loaded dataset with 339 queries
+2022-02-23 21:34:31,639 - allrank.utils.ltr_logging - INFO - longest query had 88 documents
+2022-02-23 21:34:31,640 - allrank.utils.ltr_logging - INFO - vali DS shape: [339, 88, 46]
+2022-02-23 21:34:31,641 - allrank.utils.ltr_logging - INFO - Will pad to the longest slate: 88
+2022-02-23 21:34:31,641 - allrank.utils.ltr_logging - INFO - will load test data from D:\Colecoes\BD\mq2007//Fold1/test.txt
+2022-02-23 21:34:32,009 - allrank.utils.ltr_logging - INFO - loaded dataset from <_io.BufferedReader name='D:\\Colecoes\\BD\\mq2007//Fold1/test.txt'> and got x shape (13652, 46), y shape (13652,) and query_ids shape (13652,)
+2022-02-23 21:34:32,012 - allrank.utils.ltr_logging - INFO - loaded dataset with 336 queries
+2022-02-23 21:34:32,012 - allrank.utils.ltr_logging - INFO - longest query had 80 documents
+2022-02-23 21:34:32,013 - allrank.utils.ltr_logging - INFO - test DS shape: [336, 80, 46]
+2022-02-23 21:34:32,013 - allrank.utils.ltr_logging - INFO - Will pad to the longest slate: 80
+2022-02-23 21:34:32,014 - allrank.utils.ltr_logging - INFO - Model training will execute on cpu
+2022-02-23 21:34:32,021 - allrank.utils.ltr_logging - INFO - Model has 14529 trainable parameters
+2022-02-23 21:34:32,021 - allrank.utils.ltr_logging - INFO - Current learning rate: 0.001
+2022-02-23 21:35:01,957 - allrank.utils.ltr_logging - INFO - Epoch : 0 Train loss: 1580.6938867859667 Val loss: 2455.66762270407 Train ndcg_5 0.4040748178958893 Train ndcg_10 0.4323180615901947 Val ndcg_5 0.48415300250053406 Val ndcg_10 0.5257532596588135
+2022-02-23 21:35:01,957 - allrank.utils.ltr_logging - INFO - Current:0.48415300250053406 Best:0.0
+2022-02-23 21:35:01,958 - allrank.utils.ltr_logging - INFO - Current learning rate: 0.001
+2022-02-23 21:35:32,863 - allrank.utils.ltr_logging - INFO - Epoch : 1 Train loss: 1493.7433456675963 Val loss: 2389.153782667312 Train ndcg_5 0.44586220383644104 Train ndcg_10 0.4735666811466217 Val ndcg_5 0.5287610292434692 Val ndcg_10 0.5550075173377991
+2022-02-23 21:35:32,864 - allrank.utils.ltr_logging - INFO - Current:0.5287610292434692 Best:0.48415300250053406
+2022-02-23 21:36:28,922 - allrank.utils.ltr_logging - INFO - created paths container PathsContainer(local_base_output_path='results-new/', base_output_path='results-new/', output_dir='results-new/results\\0/', tensorboard_output_path='results-new/tb_evals\\single\\0/', config_path='local.json')
+2022-02-23 21:36:28,923 - allrank.utils.ltr_logging - INFO - Config:
+ {'click_model': None,
+ 'data': DataConfig(path='D:\\Colecoes\\BD\\mq2007//Fold1/', num_workers=1, batch_size=64, slate_length=240, validation_ds_role='vali'),
+ 'detect_anomaly': False,
+ 'expected_metrics': {'val': {'ndcg_5': 0.5}},
+ 'loss': NameArgsConfig(name='lambdaLoss', args={'weighing_scheme': 'ndcgLoss2PP_scheme', 'k': None, 'mu': 10, 'sigma': 1.0}),
+ 'lr_scheduler': NameArgsConfig(name='StepLR', args={'step_size': 50, 'gamma': 0.1}),
+ 'metrics': defaultdict(<class 'list'>,
+                        {'ndcg': [5,
+                                  10]}),
+ 'model': ModelConfig(fc_model={'sizes': [32], 'input_norm': False, 'activation': None, 'dropout': 0.0}, transformer=TransformerConfig(N=2, d_ff=32, h=2, positional_encoding=None, dropout=0.3), post_model={'output_activation': None, 'd_output': 1}),
+ 'optimizer': NameArgsConfig(name='Adam', args={'lr': 0.001}),
+ 'training': TrainingConfig(epochs=2, gradient_clipping_norm=None, early_stopping_patience=100),
+ 'val_metric': 'ndcg_5'}
+2022-02-23 21:36:28,923 - allrank.utils.ltr_logging - INFO - will execute copy "local.json" "results-new/results\0/used_config.json"
+2022-02-23 21:36:28,933 - allrank.utils.ltr_logging - INFO - exit_code = 0
+2022-02-23 21:36:28,933 - allrank.utils.ltr_logging - INFO - will load train data from D:\Colecoes\BD\mq2007//Fold1/train.txt
+2022-02-23 21:36:30,347 - allrank.utils.ltr_logging - INFO - loaded dataset from <_io.BufferedReader name='D:\\Colecoes\\BD\\mq2007//Fold1/train.txt'> and got x shape (42158, 46), y shape (42158,) and query_ids shape (42158,)
+2022-02-23 21:36:30,357 - allrank.utils.ltr_logging - INFO - loaded dataset with 1017 queries
+2022-02-23 21:36:30,357 - allrank.utils.ltr_logging - INFO - longest query had 147 documents
+2022-02-23 21:36:30,359 - allrank.utils.ltr_logging - INFO - train DS shape: [1017, 147, 46]
+2022-02-23 21:36:30,359 - allrank.utils.ltr_logging - INFO - will load vali data from D:\Colecoes\BD\mq2007//Fold1/vali.txt
+2022-02-23 21:36:30,757 - allrank.utils.ltr_logging - INFO - loaded dataset from <_io.BufferedReader name='D:\\Colecoes\\BD\\mq2007//Fold1/vali.txt'> and got x shape (13813, 46), y shape (13813,) and query_ids shape (13813,)
+2022-02-23 21:36:30,761 - allrank.utils.ltr_logging - INFO - loaded dataset with 339 queries
+2022-02-23 21:36:30,761 - allrank.utils.ltr_logging - INFO - longest query had 88 documents
+2022-02-23 21:36:30,762 - allrank.utils.ltr_logging - INFO - vali DS shape: [339, 88, 46]
+2022-02-23 21:36:30,762 - allrank.utils.ltr_logging - INFO - Will pad to the longest slate: 88
+2022-02-23 21:36:30,762 - allrank.utils.ltr_logging - INFO - will load test data from D:\Colecoes\BD\mq2007//Fold1/test.txt
+2022-02-23 21:36:31,165 - allrank.utils.ltr_logging - INFO - loaded dataset from <_io.BufferedReader name='D:\\Colecoes\\BD\\mq2007//Fold1/test.txt'> and got x shape (13652, 46), y shape (13652,) and query_ids shape (13652,)
+2022-02-23 21:36:31,168 - allrank.utils.ltr_logging - INFO - loaded dataset with 336 queries
+2022-02-23 21:36:31,169 - allrank.utils.ltr_logging - INFO - longest query had 80 documents
+2022-02-23 21:36:31,169 - allrank.utils.ltr_logging - INFO - test DS shape: [336, 80, 46]
+2022-02-23 21:36:31,169 - allrank.utils.ltr_logging - INFO - Will pad to the longest slate: 80
+2022-02-23 21:36:31,170 - allrank.utils.ltr_logging - INFO - Model training will execute on cpu
+2022-02-23 21:36:31,177 - allrank.utils.ltr_logging - INFO - Model has 14529 trainable parameters
+2022-02-23 21:36:31,177 - allrank.utils.ltr_logging - INFO - Current learning rate: 0.001
+2022-02-23 21:37:00,067 - allrank.utils.ltr_logging - INFO - Epoch : 0 Train loss: 1580.6938867859667 Val loss: 2455.66762270407 Train ndcg_5 0.4040748178958893 Train ndcg_10 0.4323180615901947 Val ndcg_5 0.48415300250053406 Val ndcg_10 0.5257532596588135
+2022-02-23 21:37:00,067 - allrank.utils.ltr_logging - INFO - Current:0.48415300250053406 Best:0.0
+2022-02-23 21:37:00,067 - allrank.utils.ltr_logging - INFO - Current learning rate: 0.001
+2022-02-23 21:37:28,762 - allrank.utils.ltr_logging - INFO - Epoch : 1 Train loss: 1493.7433456675963 Val loss: 2389.153690484421 Train ndcg_5 0.44586220383644104 Train ndcg_10 0.4735666811466217 Val ndcg_5 0.5287610292434692 Val ndcg_10 0.5550075173377991
+2022-02-23 21:37:28,762 - allrank.utils.ltr_logging - INFO - Current:0.5287610292434692 Best:0.48415300250053406
+2022-02-23 21:37:28,771 - allrank.utils.ltr_logging - INFO - will load test data from D:\Colecoes\BD\mq2007//Fold1/test.txt
+2022-02-23 21:37:29,142 - allrank.utils.ltr_logging - INFO - loaded dataset from <_io.BufferedReader name='D:\\Colecoes\\BD\\mq2007//Fold1/test.txt'> and got x shape (13652, 46), y shape (13652,) and query_ids shape (13652,)
+2022-02-23 21:37:29,145 - allrank.utils.ltr_logging - INFO - loaded dataset with 336 queries
+2022-02-23 21:37:29,145 - allrank.utils.ltr_logging - INFO - longest query had 80 documents
+2022-02-23 21:37:29,146 - allrank.utils.ltr_logging - INFO - test DS shape: [336, 80, 46]
+2022-02-23 21:38:19,964 - allrank.utils.ltr_logging - INFO - created paths container PathsContainer(local_base_output_path='results-new/', base_output_path='results-new/', output_dir='results-new/results\\0/', tensorboard_output_path='results-new/tb_evals\\single\\0/', config_path='local.json')
+2022-02-23 21:38:19,965 - allrank.utils.ltr_logging - INFO - Config:
+ {'click_model': None,
+ 'data': DataConfig(path='D:\\Colecoes\\BD\\mq2007//Fold1/', num_workers=1, batch_size=64, slate_length=240, validation_ds_role='vali'),
+ 'detect_anomaly': False,
+ 'expected_metrics': {'val': {'ndcg_5': 0.5}},
+ 'loss': NameArgsConfig(name='lambdaLoss', args={'weighing_scheme': 'ndcgLoss2PP_scheme', 'k': None, 'mu': 10, 'sigma': 1.0}),
+ 'lr_scheduler': NameArgsConfig(name='StepLR', args={'step_size': 50, 'gamma': 0.1}),
+ 'metrics': defaultdict(<class 'list'>,
+                        {'ndcg': [5,
+                                  10]}),
+ 'model': ModelConfig(fc_model={'sizes': [32], 'input_norm': False, 'activation': None, 'dropout': 0.0}, transformer=TransformerConfig(N=2, d_ff=32, h=2, positional_encoding=None, dropout=0.3), post_model={'output_activation': None, 'd_output': 1}),
+ 'optimizer': NameArgsConfig(name='Adam', args={'lr': 0.001}),
+ 'training': TrainingConfig(epochs=1, gradient_clipping_norm=None, early_stopping_patience=100),
+ 'val_metric': 'ndcg_5'}
+2022-02-23 21:38:19,965 - allrank.utils.ltr_logging - INFO - will execute copy "local.json" "results-new/results\0/used_config.json"
+2022-02-23 21:38:19,976 - allrank.utils.ltr_logging - INFO - exit_code = 0
+2022-02-23 21:38:19,976 - allrank.utils.ltr_logging - INFO - will load train data from D:\Colecoes\BD\mq2007//Fold1/train.txt
+2022-02-23 21:38:21,189 - allrank.utils.ltr_logging - INFO - loaded dataset from <_io.BufferedReader name='D:\\Colecoes\\BD\\mq2007//Fold1/train.txt'> and got x shape (42158, 46), y shape (42158,) and query_ids shape (42158,)
+2022-02-23 21:38:21,198 - allrank.utils.ltr_logging - INFO - loaded dataset with 1017 queries
+2022-02-23 21:38:21,198 - allrank.utils.ltr_logging - INFO - longest query had 147 documents
+2022-02-23 21:38:21,200 - allrank.utils.ltr_logging - INFO - train DS shape: [1017, 147, 46]
+2022-02-23 21:38:21,200 - allrank.utils.ltr_logging - INFO - will load vali data from D:\Colecoes\BD\mq2007//Fold1/vali.txt
+2022-02-23 21:38:21,613 - allrank.utils.ltr_logging - INFO - loaded dataset from <_io.BufferedReader name='D:\\Colecoes\\BD\\mq2007//Fold1/vali.txt'> and got x shape (13813, 46), y shape (13813,) and query_ids shape (13813,)
+2022-02-23 21:38:21,616 - allrank.utils.ltr_logging - INFO - loaded dataset with 339 queries
+2022-02-23 21:38:21,616 - allrank.utils.ltr_logging - INFO - longest query had 88 documents
+2022-02-23 21:38:21,617 - allrank.utils.ltr_logging - INFO - vali DS shape: [339, 88, 46]
+2022-02-23 21:38:21,617 - allrank.utils.ltr_logging - INFO - Will pad to the longest slate: 88
+2022-02-23 21:38:21,617 - allrank.utils.ltr_logging - INFO - will load test data from D:\Colecoes\BD\mq2007//Fold1/test.txt
+2022-02-23 21:38:22,039 - allrank.utils.ltr_logging - INFO - loaded dataset from <_io.BufferedReader name='D:\\Colecoes\\BD\\mq2007//Fold1/test.txt'> and got x shape (13652, 46), y shape (13652,) and query_ids shape (13652,)
+2022-02-23 21:38:22,043 - allrank.utils.ltr_logging - INFO - loaded dataset with 336 queries
+2022-02-23 21:38:22,043 - allrank.utils.ltr_logging - INFO - longest query had 80 documents
+2022-02-23 21:38:22,044 - allrank.utils.ltr_logging - INFO - test DS shape: [336, 80, 46]
+2022-02-23 21:38:22,044 - allrank.utils.ltr_logging - INFO - Will pad to the longest slate: 80
+2022-02-23 21:38:22,045 - allrank.utils.ltr_logging - INFO - Model training will execute on cpu
+2022-02-23 21:38:22,054 - allrank.utils.ltr_logging - INFO - Model has 14529 trainable parameters
+2022-02-23 21:38:22,054 - allrank.utils.ltr_logging - INFO - Current learning rate: 0.001
+2022-02-23 21:38:51,656 - allrank.utils.ltr_logging - INFO - Epoch : 0 Train loss: 1580.6938867859667 Val loss: 2455.66762270407 Train ndcg_5 0.4040748178958893 Train ndcg_10 0.4323180615901947 Val ndcg_5 0.48415300250053406 Val ndcg_10 0.5257532596588135
+2022-02-23 21:38:51,656 - allrank.utils.ltr_logging - INFO - Current:0.48415300250053406 Best:0.0
+2022-02-23 21:38:51,664 - allrank.utils.ltr_logging - INFO - will load test data from D:\Colecoes\BD\mq2007//Fold1/test.txt
+2022-02-23 21:38:52,060 - allrank.utils.ltr_logging - INFO - loaded dataset from <_io.BufferedReader name='D:\\Colecoes\\BD\\mq2007//Fold1/test.txt'> and got x shape (13652, 46), y shape (13652,) and query_ids shape (13652,)
+2022-02-23 21:38:52,063 - allrank.utils.ltr_logging - INFO - loaded dataset with 336 queries
+2022-02-23 21:38:52,063 - allrank.utils.ltr_logging - INFO - longest query had 80 documents
+2022-02-23 21:38:52,064 - allrank.utils.ltr_logging - INFO - test DS shape: [336, 80, 46]
+2022-02-23 21:39:32,837 - allrank.utils.ltr_logging - INFO - created paths container PathsContainer(local_base_output_path='results-new/', base_output_path='results-new/', output_dir='results-new/results\\0/', tensorboard_output_path='results-new/tb_evals\\single\\0/', config_path='local.json')
+2022-02-23 21:39:32,837 - allrank.utils.ltr_logging - INFO - Config:
+ {'click_model': None,
+ 'data': DataConfig(path='D:\\Colecoes\\BD\\mq2007//Fold1/', num_workers=1, batch_size=64, slate_length=240, validation_ds_role='vali'),
+ 'detect_anomaly': False,
+ 'expected_metrics': {'val': {'ndcg_5': 0.5}},
+ 'loss': NameArgsConfig(name='lambdaLoss', args={'weighing_scheme': 'ndcgLoss2PP_scheme', 'k': None, 'mu': 10, 'sigma': 1.0}),
+ 'lr_scheduler': NameArgsConfig(name='StepLR', args={'step_size': 50, 'gamma': 0.1}),
+ 'metrics': defaultdict(<class 'list'>,
+                        {'ndcg': [5,
+                                  10]}),
+ 'model': ModelConfig(fc_model={'sizes': [32], 'input_norm': False, 'activation': None, 'dropout': 0.0}, transformer=TransformerConfig(N=2, d_ff=32, h=2, positional_encoding=None, dropout=0.3), post_model={'output_activation': None, 'd_output': 1}),
+ 'optimizer': NameArgsConfig(name='Adam', args={'lr': 0.001}),
+ 'training': TrainingConfig(epochs=1, gradient_clipping_norm=None, early_stopping_patience=100),
+ 'val_metric': 'ndcg_5'}
+2022-02-23 21:39:32,838 - allrank.utils.ltr_logging - INFO - will execute copy "local.json" "results-new/results\0/used_config.json"
+2022-02-23 21:39:32,847 - allrank.utils.ltr_logging - INFO - exit_code = 0
+2022-02-23 21:39:32,847 - allrank.utils.ltr_logging - INFO - will load train data from D:\Colecoes\BD\mq2007//Fold1/train.txt
+2022-02-23 21:39:34,061 - allrank.utils.ltr_logging - INFO - loaded dataset from <_io.BufferedReader name='D:\\Colecoes\\BD\\mq2007//Fold1/train.txt'> and got x shape (42158, 46), y shape (42158,) and query_ids shape (42158,)
+2022-02-23 21:39:34,070 - allrank.utils.ltr_logging - INFO - loaded dataset with 1017 queries
+2022-02-23 21:39:34,070 - allrank.utils.ltr_logging - INFO - longest query had 147 documents
+2022-02-23 21:39:34,072 - allrank.utils.ltr_logging - INFO - train DS shape: [1017, 147, 46]
+2022-02-23 21:39:34,072 - allrank.utils.ltr_logging - INFO - will load vali data from D:\Colecoes\BD\mq2007//Fold1/vali.txt
+2022-02-23 21:39:34,473 - allrank.utils.ltr_logging - INFO - loaded dataset from <_io.BufferedReader name='D:\\Colecoes\\BD\\mq2007//Fold1/vali.txt'> and got x shape (13813, 46), y shape (13813,) and query_ids shape (13813,)
+2022-02-23 21:39:34,477 - allrank.utils.ltr_logging - INFO - loaded dataset with 339 queries
+2022-02-23 21:39:34,478 - allrank.utils.ltr_logging - INFO - longest query had 88 documents
+2022-02-23 21:39:34,478 - allrank.utils.ltr_logging - INFO - vali DS shape: [339, 88, 46]
+2022-02-23 21:39:34,478 - allrank.utils.ltr_logging - INFO - Will pad to the longest slate: 88
+2022-02-23 21:39:34,478 - allrank.utils.ltr_logging - INFO - will load test data from D:\Colecoes\BD\mq2007//Fold1/test.txt
+2022-02-23 21:39:34,873 - allrank.utils.ltr_logging - INFO - loaded dataset from <_io.BufferedReader name='D:\\Colecoes\\BD\\mq2007//Fold1/test.txt'> and got x shape (13652, 46), y shape (13652,) and query_ids shape (13652,)
+2022-02-23 21:39:34,877 - allrank.utils.ltr_logging - INFO - loaded dataset with 336 queries
+2022-02-23 21:39:34,877 - allrank.utils.ltr_logging - INFO - longest query had 80 documents
+2022-02-23 21:39:34,877 - allrank.utils.ltr_logging - INFO - test DS shape: [336, 80, 46]
+2022-02-23 21:39:34,878 - allrank.utils.ltr_logging - INFO - Will pad to the longest slate: 80
+2022-02-23 21:39:34,878 - allrank.utils.ltr_logging - INFO - Model training will execute on cpu
+2022-02-23 21:39:34,885 - allrank.utils.ltr_logging - INFO - Model has 14529 trainable parameters
+2022-02-23 21:39:34,885 - allrank.utils.ltr_logging - INFO - Current learning rate: 0.001
+2022-02-23 21:40:04,593 - allrank.utils.ltr_logging - INFO - Epoch : 0 Train loss: 1580.6938867859667 Val loss: 2455.66762270407 Train ndcg_5 0.4040748178958893 Train ndcg_10 0.4323180615901947 Val ndcg_5 0.48415300250053406 Val ndcg_10 0.5257532596588135
+2022-02-23 21:40:04,593 - allrank.utils.ltr_logging - INFO - Current:0.48415300250053406 Best:0.0
+2022-02-23 21:40:04,604 - allrank.utils.ltr_logging - INFO - will load test data from D:\Colecoes\BD\mq2007//Fold1/test.txt
+2022-02-23 21:40:05,042 - allrank.utils.ltr_logging - INFO - loaded dataset from <_io.BufferedReader name='D:\\Colecoes\\BD\\mq2007//Fold1/test.txt'> and got x shape (13652, 46), y shape (13652,) and query_ids shape (13652,)
+2022-02-23 21:40:05,045 - allrank.utils.ltr_logging - INFO - loaded dataset with 336 queries
+2022-02-23 21:40:05,045 - allrank.utils.ltr_logging - INFO - longest query had 80 documents
+2022-02-23 21:40:05,046 - allrank.utils.ltr_logging - INFO - test DS shape: [336, 80, 46]
+2022-02-23 21:41:06,672 - allrank.utils.ltr_logging - INFO - created paths container PathsContainer(local_base_output_path='results-new/', base_output_path='results-new/', output_dir='results-new/results\\0/', tensorboard_output_path='results-new/tb_evals\\single\\0/', config_path='local.json')
+2022-02-23 21:41:06,674 - allrank.utils.ltr_logging - INFO - Config:
+ {'click_model': None,
+ 'data': DataConfig(path='D:\\Colecoes\\BD\\mq2007//Fold1/', num_workers=1, batch_size=64, slate_length=240, validation_ds_role='vali'),
+ 'detect_anomaly': False,
+ 'expected_metrics': {'val': {'ndcg_5': 0.5}},
+ 'loss': NameArgsConfig(name='lambdaLoss', args={'weighing_scheme': 'ndcgLoss2PP_scheme', 'k': None, 'mu': 10, 'sigma': 1.0}),
+ 'lr_scheduler': NameArgsConfig(name='StepLR', args={'step_size': 50, 'gamma': 0.1}),
+ 'metrics': defaultdict(<class 'list'>,
+                        {'ndcg': [5,
+                                  10]}),
+ 'model': ModelConfig(fc_model={'sizes': [32], 'input_norm': False, 'activation': None, 'dropout': 0.0}, transformer=TransformerConfig(N=2, d_ff=32, h=2, positional_encoding=None, dropout=0.3), post_model={'output_activation': None, 'd_output': 1}),
+ 'optimizer': NameArgsConfig(name='Adam', args={'lr': 0.001}),
+ 'training': TrainingConfig(epochs=1, gradient_clipping_norm=None, early_stopping_patience=100),
+ 'val_metric': 'ndcg_5'}
+2022-02-23 21:41:06,675 - allrank.utils.ltr_logging - INFO - will execute copy "local.json" "results-new/results\0/used_config.json"
+2022-02-23 21:41:06,686 - allrank.utils.ltr_logging - INFO - exit_code = 0
+2022-02-23 21:41:06,686 - allrank.utils.ltr_logging - INFO - will load train data from D:\Colecoes\BD\mq2007//Fold1/train.txt
+2022-02-23 21:41:07,892 - allrank.utils.ltr_logging - INFO - loaded dataset from <_io.BufferedReader name='D:\\Colecoes\\BD\\mq2007//Fold1/train.txt'> and got x shape (42158, 46), y shape (42158,) and query_ids shape (42158,)
+2022-02-23 21:41:07,910 - allrank.utils.ltr_logging - INFO - loaded dataset with 1017 queries
+2022-02-23 21:41:07,910 - allrank.utils.ltr_logging - INFO - longest query had 147 documents
+2022-02-23 21:41:07,912 - allrank.utils.ltr_logging - INFO - train DS shape: [1017, 147, 46]
+2022-02-23 21:41:07,913 - allrank.utils.ltr_logging - INFO - will load vali data from D:\Colecoes\BD\mq2007//Fold1/vali.txt
+2022-02-23 21:41:08,318 - allrank.utils.ltr_logging - INFO - loaded dataset from <_io.BufferedReader name='D:\\Colecoes\\BD\\mq2007//Fold1/vali.txt'> and got x shape (13813, 46), y shape (13813,) and query_ids shape (13813,)
+2022-02-23 21:41:08,326 - allrank.utils.ltr_logging - INFO - loaded dataset with 339 queries
+2022-02-23 21:41:08,327 - allrank.utils.ltr_logging - INFO - longest query had 88 documents
+2022-02-23 21:41:08,327 - allrank.utils.ltr_logging - INFO - vali DS shape: [339, 88, 46]
+2022-02-23 21:41:08,328 - allrank.utils.ltr_logging - INFO - Will pad to the longest slate: 88
+2022-02-23 21:41:08,328 - allrank.utils.ltr_logging - INFO - will load test data from D:\Colecoes\BD\mq2007//Fold1/test.txt
+2022-02-23 21:41:08,685 - allrank.utils.ltr_logging - INFO - loaded dataset from <_io.BufferedReader name='D:\\Colecoes\\BD\\mq2007//Fold1/test.txt'> and got x shape (13652, 46), y shape (13652,) and query_ids shape (13652,)
+2022-02-23 21:41:08,691 - allrank.utils.ltr_logging - INFO - loaded dataset with 336 queries
+2022-02-23 21:41:08,691 - allrank.utils.ltr_logging - INFO - longest query had 80 documents
+2022-02-23 21:41:08,692 - allrank.utils.ltr_logging - INFO - test DS shape: [336, 80, 46]
+2022-02-23 21:41:08,692 - allrank.utils.ltr_logging - INFO - Will pad to the longest slate: 80
+2022-02-23 21:41:08,694 - allrank.utils.ltr_logging - INFO - Model training will execute on cpu
+2022-02-23 21:41:08,713 - allrank.utils.ltr_logging - INFO - Model has 14529 trainable parameters
+2022-02-23 21:41:08,713 - allrank.utils.ltr_logging - INFO - Current learning rate: 0.001
+2022-02-23 21:43:47,287 - allrank.utils.ltr_logging - INFO - created paths container PathsContainer(local_base_output_path='results-new/', base_output_path='results-new/', output_dir='results-new/results\\0/', tensorboard_output_path='results-new/tb_evals\\single\\0/', config_path='d:\\projetos códigos\\pycharmprojects\\pythonproject2\\env\\lib\\site-packages\\allrank\\local.json')
+2022-02-23 21:44:47,608 - allrank.utils.ltr_logging - INFO - created paths container PathsContainer(local_base_output_path='results-new/', base_output_path='results-new/', output_dir='results-new/results\\0/', tensorboard_output_path='results-new/tb_evals\\single\\0/', config_path='local.json')
+2022-02-23 21:44:47,608 - allrank.utils.ltr_logging - INFO - Config:
+ {'click_model': None,
+ 'data': DataConfig(path='D:\\Colecoes\\BD\\mq2007//Fold1/', num_workers=1, batch_size=64, slate_length=240, validation_ds_role='vali'),
+ 'detect_anomaly': False,
+ 'expected_metrics': {'val': {'ndcg_5': 0.5}},
+ 'loss': NameArgsConfig(name='lambdaLoss', args={'weighing_scheme': 'ndcgLoss2PP_scheme', 'k': None, 'mu': 10, 'sigma': 1.0}),
+ 'lr_scheduler': NameArgsConfig(name='StepLR', args={'step_size': 50, 'gamma': 0.1}),
+ 'metrics': defaultdict(<class 'list'>,
+                        {'ndcg': [5,
+                                  10]}),
+ 'model': ModelConfig(fc_model={'sizes': [32], 'input_norm': False, 'activation': None, 'dropout': 0.0}, transformer=TransformerConfig(N=2, d_ff=32, h=2, positional_encoding=None, dropout=0.3), post_model={'output_activation': None, 'd_output': 1}),
+ 'optimizer': NameArgsConfig(name='Adam', args={'lr': 0.001}),
+ 'training': TrainingConfig(epochs=1, gradient_clipping_norm=None, early_stopping_patience=100),
+ 'val_metric': 'ndcg_5'}
+2022-02-23 21:44:47,608 - allrank.utils.ltr_logging - INFO - will execute copy "local.json" "results-new/results\0/used_config.json"
+2022-02-23 21:44:47,619 - allrank.utils.ltr_logging - INFO - exit_code = 0
+2022-02-23 21:44:47,619 - allrank.utils.ltr_logging - INFO - will load train data from D:\Colecoes\BD\mq2007//Fold1/train.txt
+2022-02-23 21:44:48,809 - allrank.utils.ltr_logging - INFO - loaded dataset from <_io.BufferedReader name='D:\\Colecoes\\BD\\mq2007//Fold1/train.txt'> and got x shape (42158, 46), y shape (42158,) and query_ids shape (42158,)
+2022-02-23 21:44:48,818 - allrank.utils.ltr_logging - INFO - loaded dataset with 1017 queries
+2022-02-23 21:44:48,818 - allrank.utils.ltr_logging - INFO - longest query had 147 documents
+2022-02-23 21:44:48,820 - allrank.utils.ltr_logging - INFO - train DS shape: [1017, 147, 46]
+2022-02-23 21:44:48,820 - allrank.utils.ltr_logging - INFO - will load vali data from D:\Colecoes\BD\mq2007//Fold1/vali.txt
+2022-02-23 21:44:49,214 - allrank.utils.ltr_logging - INFO - loaded dataset from <_io.BufferedReader name='D:\\Colecoes\\BD\\mq2007//Fold1/vali.txt'> and got x shape (13813, 46), y shape (13813,) and query_ids shape (13813,)
+2022-02-23 21:44:49,217 - allrank.utils.ltr_logging - INFO - loaded dataset with 339 queries
+2022-02-23 21:44:49,217 - allrank.utils.ltr_logging - INFO - longest query had 88 documents
+2022-02-23 21:44:49,218 - allrank.utils.ltr_logging - INFO - vali DS shape: [339, 88, 46]
+2022-02-23 21:44:49,218 - allrank.utils.ltr_logging - INFO - Will pad to the longest slate: 88
+2022-02-23 21:44:49,218 - allrank.utils.ltr_logging - INFO - will load test data from D:\Colecoes\BD\mq2007//Fold1/test.txt
+2022-02-23 21:44:49,612 - allrank.utils.ltr_logging - INFO - loaded dataset from <_io.BufferedReader name='D:\\Colecoes\\BD\\mq2007//Fold1/test.txt'> and got x shape (13652, 46), y shape (13652,) and query_ids shape (13652,)
+2022-02-23 21:44:49,615 - allrank.utils.ltr_logging - INFO - loaded dataset with 336 queries
+2022-02-23 21:44:49,616 - allrank.utils.ltr_logging - INFO - longest query had 80 documents
+2022-02-23 21:44:49,616 - allrank.utils.ltr_logging - INFO - test DS shape: [336, 80, 46]
+2022-02-23 21:44:49,616 - allrank.utils.ltr_logging - INFO - Will pad to the longest slate: 80
+2022-02-23 21:44:49,617 - allrank.utils.ltr_logging - INFO - Model training will execute on cpu
+2022-02-23 21:44:49,624 - allrank.utils.ltr_logging - INFO - Model has 14529 trainable parameters
+2022-02-23 21:44:49,624 - allrank.utils.ltr_logging - INFO - Current learning rate: 0.001
+2022-02-23 21:44:59,808 - allrank.utils.ltr_logging - INFO - created paths container PathsContainer(local_base_output_path='results-new/', base_output_path='results-new/', output_dir='results-new/results\\0/', tensorboard_output_path='results-new/tb_evals\\single\\0/', config_path='local.json')
+2022-02-23 21:44:59,810 - allrank.utils.ltr_logging - INFO - Config:
+ {'click_model': None,
+ 'data': DataConfig(path='D:\\Colecoes\\BD\\mq2007//Fold1/', num_workers=1, batch_size=64, slate_length=240, validation_ds_role='vali'),
+ 'detect_anomaly': False,
+ 'expected_metrics': {'val': {'ndcg_5': 0.5}},
+ 'loss': NameArgsConfig(name='lambdaLoss', args={'weighing_scheme': 'ndcgLoss2PP_scheme', 'k': None, 'mu': 10, 'sigma': 1.0}),
+ 'lr_scheduler': NameArgsConfig(name='StepLR', args={'step_size': 50, 'gamma': 0.1}),
+ 'metrics': defaultdict(<class 'list'>,
+                        {'ndcg': [5,
+                                  10]}),
+ 'model': ModelConfig(fc_model={'sizes': [32], 'input_norm': False, 'activation': None, 'dropout': 0.0}, transformer=TransformerConfig(N=2, d_ff=32, h=2, positional_encoding=None, dropout=0.3), post_model={'output_activation': None, 'd_output': 1}),
+ 'optimizer': NameArgsConfig(name='Adam', args={'lr': 0.001}),
+ 'training': TrainingConfig(epochs=1, gradient_clipping_norm=None, early_stopping_patience=100),
+ 'val_metric': 'ndcg_5'}
+2022-02-23 21:44:59,810 - allrank.utils.ltr_logging - INFO - will execute copy "local.json" "results-new/results\0/used_config.json"
+2022-02-23 21:44:59,821 - allrank.utils.ltr_logging - INFO - exit_code = 0
+2022-02-23 21:44:59,821 - allrank.utils.ltr_logging - INFO - will load train data from D:\Colecoes\BD\mq2007//Fold1/train.txt
+2022-02-23 21:45:00,977 - allrank.utils.ltr_logging - INFO - loaded dataset from <_io.BufferedReader name='D:\\Colecoes\\BD\\mq2007//Fold1/train.txt'> and got x shape (42158, 46), y shape (42158,) and query_ids shape (42158,)
+2022-02-23 21:45:00,994 - allrank.utils.ltr_logging - INFO - loaded dataset with 1017 queries
+2022-02-23 21:45:00,994 - allrank.utils.ltr_logging - INFO - longest query had 147 documents
+2022-02-23 21:45:00,996 - allrank.utils.ltr_logging - INFO - train DS shape: [1017, 147, 46]
+2022-02-23 21:45:00,997 - allrank.utils.ltr_logging - INFO - will load vali data from D:\Colecoes\BD\mq2007//Fold1/vali.txt
+2022-02-23 21:45:01,373 - allrank.utils.ltr_logging - INFO - loaded dataset from <_io.BufferedReader name='D:\\Colecoes\\BD\\mq2007//Fold1/vali.txt'> and got x shape (13813, 46), y shape (13813,) and query_ids shape (13813,)
+2022-02-23 21:45:01,383 - allrank.utils.ltr_logging - INFO - loaded dataset with 339 queries
+2022-02-23 21:45:01,383 - allrank.utils.ltr_logging - INFO - longest query had 88 documents
+2022-02-23 21:45:01,384 - allrank.utils.ltr_logging - INFO - vali DS shape: [339, 88, 46]
+2022-02-23 21:45:01,384 - allrank.utils.ltr_logging - INFO - Will pad to the longest slate: 88
+2022-02-23 21:45:01,384 - allrank.utils.ltr_logging - INFO - will load test data from D:\Colecoes\BD\mq2007//Fold1/test.txt
+2022-02-23 21:45:01,760 - allrank.utils.ltr_logging - INFO - loaded dataset from <_io.BufferedReader name='D:\\Colecoes\\BD\\mq2007//Fold1/test.txt'> and got x shape (13652, 46), y shape (13652,) and query_ids shape (13652,)
+2022-02-23 21:45:01,766 - allrank.utils.ltr_logging - INFO - loaded dataset with 336 queries
+2022-02-23 21:45:01,766 - allrank.utils.ltr_logging - INFO - longest query had 80 documents
+2022-02-23 21:45:01,767 - allrank.utils.ltr_logging - INFO - test DS shape: [336, 80, 46]
+2022-02-23 21:45:01,767 - allrank.utils.ltr_logging - INFO - Will pad to the longest slate: 80
+2022-02-23 21:45:01,768 - allrank.utils.ltr_logging - INFO - Model training will execute on cpu
+2022-02-23 21:45:01,789 - allrank.utils.ltr_logging - INFO - Model has 14529 trainable parameters
+2022-02-23 21:45:01,789 - allrank.utils.ltr_logging - INFO - Current learning rate: 0.001
+2022-02-23 21:45:41,536 - allrank.utils.ltr_logging - INFO - Epoch : 0 Train loss: 1580.6938867859667 Val loss: 2455.66762270407 Train ndcg_5 0.4040748178958893 Train ndcg_10 0.4323180615901947 Val ndcg_5 0.48415300250053406 Val ndcg_10 0.5257532596588135
+2022-02-23 21:45:41,536 - allrank.utils.ltr_logging - INFO - Current:0.48415300250053406 Best:0.0
+2022-02-23 21:45:41,549 - allrank.utils.ltr_logging - INFO - will load test data from D:\Colecoes\BD\mq2007//Fold1/test.txt
+2022-02-23 21:45:41,973 - allrank.utils.ltr_logging - INFO - loaded dataset from <_io.BufferedReader name='D:\\Colecoes\\BD\\mq2007//Fold1/test.txt'> and got x shape (13652, 46), y shape (13652,) and query_ids shape (13652,)
+2022-02-23 21:45:41,980 - allrank.utils.ltr_logging - INFO - loaded dataset with 336 queries
+2022-02-23 21:45:41,980 - allrank.utils.ltr_logging - INFO - longest query had 80 documents
+2022-02-23 21:45:41,981 - allrank.utils.ltr_logging - INFO - test DS shape: [336, 80, 46]
+2022-02-23 21:46:37,419 - allrank.utils.ltr_logging - INFO - created paths container PathsContainer(local_base_output_path='results-new/', base_output_path='results-new/', output_dir='results-new/results\\0/', tensorboard_output_path='results-new/tb_evals\\single\\0/', config_path='local.json')
+2022-02-23 21:46:37,420 - allrank.utils.ltr_logging - INFO - Config:
+ {'click_model': None,
+ 'data': DataConfig(path='D:\\Colecoes\\BD\\mq2007//Fold1/', num_workers=1, batch_size=64, slate_length=240, validation_ds_role='vali'),
+ 'detect_anomaly': False,
+ 'expected_metrics': {'val': {'ndcg_5': 0.5}},
+ 'loss': NameArgsConfig(name='lambdaLoss', args={'weighing_scheme': 'ndcgLoss2PP_scheme', 'k': None, 'mu': 10, 'sigma': 1.0}),
+ 'lr_scheduler': NameArgsConfig(name='StepLR', args={'step_size': 50, 'gamma': 0.1}),
+ 'metrics': defaultdict(<class 'list'>,
+                        {'ndcg': [5,
+                                  10]}),
+ 'model': ModelConfig(fc_model={'sizes': [32], 'input_norm': False, 'activation': None, 'dropout': 0.0}, transformer=TransformerConfig(N=2, d_ff=32, h=2, positional_encoding=None, dropout=0.3), post_model={'output_activation': None, 'd_output': 1}),
+ 'optimizer': NameArgsConfig(name='Adam', args={'lr': 0.001}),
+ 'training': TrainingConfig(epochs=1, gradient_clipping_norm=None, early_stopping_patience=100),
+ 'val_metric': 'ndcg_5'}
+2022-02-23 21:46:37,420 - allrank.utils.ltr_logging - INFO - will execute copy "local.json" "results-new/results\0/used_config.json"
+2022-02-23 21:46:37,440 - allrank.utils.ltr_logging - INFO - exit_code = 0
+2022-02-23 21:46:37,440 - allrank.utils.ltr_logging - INFO - will load train data from D:\Colecoes\BD\mq2007//Fold1/train.txt
+2022-02-23 21:46:38,569 - allrank.utils.ltr_logging - INFO - loaded dataset from <_io.BufferedReader name='D:\\Colecoes\\BD\\mq2007//Fold1/train.txt'> and got x shape (42158, 46), y shape (42158,) and query_ids shape (42158,)
+2022-02-23 21:46:38,579 - allrank.utils.ltr_logging - INFO - loaded dataset with 1017 queries
+2022-02-23 21:46:38,579 - allrank.utils.ltr_logging - INFO - longest query had 147 documents
+2022-02-23 21:46:38,581 - allrank.utils.ltr_logging - INFO - train DS shape: [1017, 147, 46]
+2022-02-23 21:46:38,581 - allrank.utils.ltr_logging - INFO - will load vali data from D:\Colecoes\BD\mq2007//Fold1/vali.txt
+2022-02-23 21:46:38,952 - allrank.utils.ltr_logging - INFO - loaded dataset from <_io.BufferedReader name='D:\\Colecoes\\BD\\mq2007//Fold1/vali.txt'> and got x shape (13813, 46), y shape (13813,) and query_ids shape (13813,)
+2022-02-23 21:46:38,956 - allrank.utils.ltr_logging - INFO - loaded dataset with 339 queries
+2022-02-23 21:46:38,956 - allrank.utils.ltr_logging - INFO - longest query had 88 documents
+2022-02-23 21:46:38,956 - allrank.utils.ltr_logging - INFO - vali DS shape: [339, 88, 46]
+2022-02-23 21:46:38,957 - allrank.utils.ltr_logging - INFO - Will pad to the longest slate: 88
+2022-02-23 21:46:38,957 - allrank.utils.ltr_logging - INFO - will load test data from D:\Colecoes\BD\mq2007//Fold1/test.txt
+2022-02-23 21:46:39,326 - allrank.utils.ltr_logging - INFO - loaded dataset from <_io.BufferedReader name='D:\\Colecoes\\BD\\mq2007//Fold1/test.txt'> and got x shape (13652, 46), y shape (13652,) and query_ids shape (13652,)
+2022-02-23 21:46:39,330 - allrank.utils.ltr_logging - INFO - loaded dataset with 336 queries
+2022-02-23 21:46:39,330 - allrank.utils.ltr_logging - INFO - longest query had 80 documents
+2022-02-23 21:46:39,330 - allrank.utils.ltr_logging - INFO - test DS shape: [336, 80, 46]
+2022-02-23 21:46:39,330 - allrank.utils.ltr_logging - INFO - Will pad to the longest slate: 80
+2022-02-23 21:46:39,331 - allrank.utils.ltr_logging - INFO - Model training will execute on cpu
+2022-02-23 21:46:39,338 - allrank.utils.ltr_logging - INFO - Model has 14529 trainable parameters
+2022-02-23 21:46:39,338 - allrank.utils.ltr_logging - INFO - Current learning rate: 0.001
+2022-02-23 21:47:08,397 - allrank.utils.ltr_logging - INFO - Epoch : 0 Train loss: 1580.6938867859667 Val loss: 2455.66762270407 Train ndcg_5 0.4040748178958893 Train ndcg_10 0.4323180615901947 Val ndcg_5 0.48415300250053406 Val ndcg_10 0.5257532596588135
+2022-02-23 21:47:08,398 - allrank.utils.ltr_logging - INFO - Current:0.48415300250053406 Best:0.0
+2022-02-23 21:47:08,405 - allrank.utils.ltr_logging - INFO - will load test data from D:\Colecoes\BD\mq2007//Fold1/test.txt
+2022-02-23 21:47:08,780 - allrank.utils.ltr_logging - INFO - loaded dataset from <_io.BufferedReader name='D:\\Colecoes\\BD\\mq2007//Fold1/test.txt'> and got x shape (13652, 46), y shape (13652,) and query_ids shape (13652,)
+2022-02-23 21:47:08,783 - allrank.utils.ltr_logging - INFO - loaded dataset with 336 queries
+2022-02-23 21:47:08,784 - allrank.utils.ltr_logging - INFO - longest query had 80 documents
+2022-02-23 21:47:08,784 - allrank.utils.ltr_logging - INFO - test DS shape: [336, 80, 46]
+2022-02-23 21:49:19,598 - allrank.utils.ltr_logging - INFO - created paths container PathsContainer(local_base_output_path='results-new/', base_output_path='results-new/', output_dir='results-new/results\\0/', tensorboard_output_path='results-new/tb_evals\\single\\0/', config_path='local.json')
+2022-02-23 21:49:19,598 - allrank.utils.ltr_logging - INFO - Config:
+ {'click_model': None,
+ 'data': DataConfig(path='toy_data//Fold1/', num_workers=1, batch_size=64, slate_length=240, validation_ds_role='vali'),
+ 'detect_anomaly': False,
+ 'expected_metrics': {'val': {'ndcg_5': 0.5}},
+ 'loss': NameArgsConfig(name='lambdaLoss', args={'weighing_scheme': 'ndcgLoss2PP_scheme', 'k': None, 'mu': 10, 'sigma': 1.0}),
+ 'lr_scheduler': NameArgsConfig(name='StepLR', args={'step_size': 50, 'gamma': 0.1}),
+ 'metrics': defaultdict(<class 'list'>,
+                        {'ndcg': [5,
+                                  10]}),
+ 'model': ModelConfig(fc_model={'sizes': [32], 'input_norm': False, 'activation': None, 'dropout': 0.0}, transformer=TransformerConfig(N=2, d_ff=32, h=2, positional_encoding=None, dropout=0.3), post_model={'output_activation': None, 'd_output': 1}),
+ 'optimizer': NameArgsConfig(name='Adam', args={'lr': 0.001}),
+ 'training': TrainingConfig(epochs=1, gradient_clipping_norm=None, early_stopping_patience=100),
+ 'val_metric': 'ndcg_5'}
+2022-02-23 21:49:19,599 - allrank.utils.ltr_logging - INFO - will execute copy "local.json" "results-new/results\0/used_config.json"
+2022-02-23 21:49:19,610 - allrank.utils.ltr_logging - INFO - exit_code = 0
+2022-02-23 21:49:19,610 - allrank.utils.ltr_logging - INFO - will load train data from toy_data//Fold1/train.txt
+2022-02-23 21:49:20,730 - allrank.utils.ltr_logging - INFO - loaded dataset from <_io.BufferedReader name='toy_data//Fold1/train.txt'> and got x shape (30000, 64), y shape (30000,) and query_ids shape (30000,)
+2022-02-23 21:49:20,739 - allrank.utils.ltr_logging - INFO - loaded dataset with 30 queries
+2022-02-23 21:49:20,739 - allrank.utils.ltr_logging - INFO - longest query had 1000 documents
+2022-02-23 21:49:20,740 - allrank.utils.ltr_logging - INFO - train DS shape: [30, 1000, 64]
+2022-02-23 21:49:20,741 - allrank.utils.ltr_logging - INFO - will load vali data from toy_data//Fold1/vali.txt
+2022-02-23 21:49:21,074 - allrank.utils.ltr_logging - INFO - loaded dataset from <_io.BufferedReader name='toy_data//Fold1/vali.txt'> and got x shape (9058, 64), y shape (9058,) and query_ids shape (9058,)
+2022-02-23 21:49:21,076 - allrank.utils.ltr_logging - INFO - loaded dataset with 10 queries
+2022-02-23 21:49:21,076 - allrank.utils.ltr_logging - INFO - longest query had 1000 documents
+2022-02-23 21:49:21,077 - allrank.utils.ltr_logging - INFO - vali DS shape: [10, 1000, 64]
+2022-02-23 21:49:21,077 - allrank.utils.ltr_logging - INFO - Will pad to the longest slate: 1000
+2022-02-23 21:49:21,077 - allrank.utils.ltr_logging - INFO - will load test data from toy_data//Fold1/test.txt
+2022-02-23 21:49:21,441 - allrank.utils.ltr_logging - INFO - loaded dataset from <_io.BufferedReader name='toy_data//Fold1/test.txt'> and got x shape (10000, 64), y shape (10000,) and query_ids shape (10000,)
+2022-02-23 21:49:21,444 - allrank.utils.ltr_logging - INFO - loaded dataset with 10 queries
+2022-02-23 21:49:21,444 - allrank.utils.ltr_logging - INFO - longest query had 1000 documents
+2022-02-23 21:49:21,445 - allrank.utils.ltr_logging - INFO - test DS shape: [10, 1000, 64]
+2022-02-23 21:49:21,445 - allrank.utils.ltr_logging - INFO - Will pad to the longest slate: 1000
+2022-02-23 21:49:21,446 - allrank.utils.ltr_logging - INFO - Model training will execute on cpu
+2022-02-23 21:49:21,452 - allrank.utils.ltr_logging - INFO - Model has 15105 trainable parameters
+2022-02-23 21:49:21,452 - allrank.utils.ltr_logging - INFO - Current learning rate: 0.001
+2022-02-23 21:49:31,322 - allrank.utils.ltr_logging - INFO - Epoch : 0 Train loss: 1489.918212890625 Val loss: 1294.7255859375 Train ndcg_5 0.03770683705806732 Train ndcg_10 0.04823194071650505 Val ndcg_5 0.2192005217075348 Val ndcg_10 0.22172240912914276
+2022-02-23 21:49:31,322 - allrank.utils.ltr_logging - INFO - Current:0.2192005217075348 Best:0.0
+2022-02-23 21:49:31,329 - allrank.utils.ltr_logging - INFO - will load test data from toy_data//Fold1/test.txt
+2022-02-23 21:49:31,695 - allrank.utils.ltr_logging - INFO - loaded dataset from <_io.BufferedReader name='toy_data//Fold1/test.txt'> and got x shape (10000, 64), y shape (10000,) and query_ids shape (10000,)
+2022-02-23 21:49:31,698 - allrank.utils.ltr_logging - INFO - loaded dataset with 10 queries
+2022-02-23 21:49:31,698 - allrank.utils.ltr_logging - INFO - longest query had 1000 documents
+2022-02-23 21:49:31,698 - allrank.utils.ltr_logging - INFO - test DS shape: [10, 1000, 64]
